@@ -25,11 +25,14 @@
     </div>
     <div class="col-md-6">
       <h2>Formats original, png, wepb, loading auto, placeholder dominant, gifDivFactor 4</h2>
-      {{ partial "image" (dict "src" "test.jpg" "page" . "alt" "test image"
-      "formats" (slice "original" "png" "webp")
-      "loading" "auto"
-      "placeholder" "dominant"
-      "gifDivFactor" 4) }}
+      {{ partial "image" (dict 
+        "src" "test.jpg" 
+        "page" . 
+        "alt" "test image"
+        "formats" (slice "original" "png" "webp")
+        "loading" "auto"
+        "placeholder" "dominant"
+        "gifDivFactor" 4) }}
     </div>
     <div class="col-md-6">
       <h2>Width 200, densities 1,2,3, loading "lazy", placeholder gray-200</h2>
