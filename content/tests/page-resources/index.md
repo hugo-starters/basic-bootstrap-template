@@ -7,7 +7,7 @@ type: tests
 test_image: test.jpg
 image:
   renderHook: false
----
+--- 
 
 <!-- Image with renderHook: false
 ![Alt Text](test.jpg "Test Title") -->
