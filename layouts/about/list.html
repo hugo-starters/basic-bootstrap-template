@@ -6,15 +6,15 @@
         <header>
           <h1>{{ .Title }}</h1>
         </header>
-        {{ $headless := .GetPage "home-headless/index" }}
+        {{ $headless := .GetPage "headless/index" }}
         {{ range $headless.Pages.ByWeight }}
             {{ $path := printf "%s%s" .File.Dir .File.LogicalName }}
             {{ with .Site.GetPage $path }}
               {{ if .Params.use_partial }}
-                {{ $partial_path := printf "blocks/home/%s" .Params.use_partial }}
+                {{ $partial_path := printf "blocks/about/%s" .Params.use_partial }}
                 {{ partial $partial_path .}}
               {{ else }}
-                {{ partial "blocks/home/default.html" .}}
+                {{ partial "blocks/about/default.html" .}}
               {{ end }}
             {{ end }}
         {{ end }}

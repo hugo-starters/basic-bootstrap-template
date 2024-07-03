@@ -1,0 +1,20 @@
+
+<div class="container py-3 bg-secondary-subtle">
+    <div class="row">
+        <div class="col">
+            <h2>{{ .Title }}</h2>
+        </div>
+    </div>
+    <div class="row">
+   
+        <div class="col-md-6 google-maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.2757238835025!2d151.2127217757476!3d-33.856784373231115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae665e892fdd%3A0x3133f8d75a1ac251!2sSydney%20Opera%20House!5e0!3m2!1sen!2sau!4v1720016437865!5m2!1sen!2sau"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6 bg-primary">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
